@@ -1,1 +1,172 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+$primary-color: rgb(53, 53, 53);
+$secondary-color: rgb(255, 255, 255);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+//Buttons
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+  &.button-primary,
+  &.button-secondary {
+    border: $primary-color 0.1rem solid;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &.button-primary:hover,
+  &.button-secondary:hover {
+    background: $primary-color;
+    color: $secondary-color;
+  }
+
+  &.button-primary {
+    background: $primary-color;
+    color: $secondary-color;
+    &:hover {
+      background: #000;
+    }
+  }
+  &.button-secondary {
+    background: none;
+    &:hover {
+      border: $secondary-color 0.1rem solid;
+    }
+  }
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  color: $secondary-color;
+}
+
+// Sections
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+
+  .about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    &,
+    .about-details-container {
+      display: flex;
+    }
+    .about-details-container {
+      justify-content: center;
+      flex-direction: column;
+    }
+    .details-container {
+      padding: 1.5rem;
+      flex: 1;
+      background: white;
+      border-radius: 2rem;
+      border: $primary-color 0.1rem solid;
+      border-color: rgb(163, 163, 163);
+      text-align: center;
+    }
+  }
+}
+
+.section__text p,
+section {
+  text-align: center;
+  &.section__text__p1 {
+    font-weight: 600;
+  }
+  &.section__text__p2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+  #profile {
+    height: 87vh;
+    margin-bottom: 0;
+  }
+  article {
+    font-size: 1rem;
+  }
+  nav {
+    height: fit-content;
+    margin: 1rem 2rem;
+  }
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+
+  .nav-links li a {
+    font-size: 0.5rem;
+  }
+
+  .logo {
+    font-size: 0.75rem;
+  }
+  .nav-links {
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .section__pic-container {
+    width: auto;
+    justify-content: center;
+    img {
+      border-radius: 50%;
+    }
+  }
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .text-container {
+    text-align: justify;
+  }
+  section {
+    margin: 0 2rem;
+    display: block;
+    height: 100%;
+  }
+}

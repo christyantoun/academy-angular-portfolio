@@ -1,0 +1,28 @@
+
+
+<!-- !Angular allows us to create a single page application -
+! index.html is the single page application and because this is what is being served initially we now have
+! access to the code inside our src folder
+! how is our angular application kicked off actually though? angular injects js script bundles automcatically, this is the code inside our main.ts
+! main.ts boostraps/starts our application with appModule which includes a boostrap array which lists all the components that should be known to angular at the
+! point of time it anayzes index.html    -->
+
+<!-- !Explain the reason behind creating components  -->
+<!-- Single Responsibility Principle (SRP) -->
+<!-- Reusabiity -->
+<!-- Breaks down complexity -->
+<!-- Nesting ( Components can be nested within each other to create a hierarchical structure.) -->
+<!-- Performance: enabling Angular's change detection to focus only on the components that actually change -->
+
+<!-- ? Question: How many components should we be creating for our vanilla project and what are they?  -->
+<!-- ** for now we will have a minimum of 4 components: navbar, profile, about and projects -->
+
+<!-- TODO: create our first component -->
+
+<!-- ! angular uses components to build web pages and uses modules to bundle different pieces (components) into packages  -->
+<!-- !Declarations: angular doesn't scan my files, it doesn't know it exists unless we actually tell it by adding it to the declarations array
+!bootrap: hey you should recognize these components  -->
+<app-navbar></app-navbar>
+<app-profile></app-profile>
+<app-about></app-about>
+<app-projects></app-projects>

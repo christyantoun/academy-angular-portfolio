@@ -1,0 +1,18 @@
+<section id="projects">
+  <p class="section__text__p1">Browse My Recent</p>
+  <h1 class="title">Projects</h1>
+  <div>
+    <div class="about-containers">
+      <div class="details-container color-container" *ngFor="let project of projects">
+        <div class="article-container">
+          <img [src]="project.image" [alt]="project.title" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">{{ project.title }}</h2>
+        <div class="btn-container">
+          <button class="btn button-primary project-btn" (click)="openLink(project.githubLink)">Github</button>
+          <button class="btn button-secondary project-btn" (click)="openLink(project.demoLink)">Live Demo</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
