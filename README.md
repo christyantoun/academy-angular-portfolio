@@ -1,27 +1,45 @@
-# AngularPortfolio
+# Angular Portfolio 
+This project aims at building a straightforward portfolio using angular and scss. 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.1.
+## Installation
+1.  **Install Node.js and npm:** Angular requires Node.js and npm to be installed on your system. You can download and install them from the official Node.js website: https://nodejs.org/
+2. **Install Angular CLI:** Angular CLI (Command Line Interface) is a powerful tool for initializing, developing, scaffolding, and maintaining Angular applications. Install it globally using npm:
+```bash 
+npm install -g @angular/cli
+```
+3. **Create a new Angular project:** Once Angular CLI is installed, you can create a new Angular project using the ng new command. Navigate to the directory where you want to create your project and run:
+```bash 
+ng new --no-standalone
+```
 
-## Development server
+> **_NOTE:_**  When prompted to add routing, select yes and then select scss as the stylesheet format to be used
+```python
+? Would you like to add Angular routing? Yes
+? Which stylesheet format would you like to use? SCSS
+```
+4. Navigate to the project directory: After creating the project, navigate into the project directory `cd portfolio-project-name`
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+5. Serve the application: 
+```bash
+ng serve
+```
+Now we can access the application at http://localhost:4200/.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Workshop Breakdown
+- [ ]  Go over the vanilla project and understand how to divide the page 
+- [ ]  Setup new project, go over the automatically generated files and how angular works 
+- [ ]  Define a suggested architecture, and understand the importance of modules and components
+- [ ]  Create the components 
+        ```
+        ng g component navbar
+        ```
+- [ ]  Add a commit message about the project setup 
+- [ ]  Copy the navbar section from the vanilla project and paste it into the navbar component
+- [ ]  Commit the changes made to the navbar
+- [ ]  Include component-specific styles in the component's stylesheet 
+- [ ]  Include global styles in styles.scss 
+- [ ]  Repeat for the rest of the components
+- [ ]  Create an interface for the projects
+- [ ]  Inspect the browser and go over prominent dev tool features
+- [ ]  Bonus: Write and link a function to the TS files 
